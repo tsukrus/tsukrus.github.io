@@ -1,0 +1,173 @@
+h1, p, a {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.header, .footer {
+    width: auto;
+    background-color: #040404;
+}
+
+.items {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 64px;
+}
+
+.pavadinimas {
+    color: #FAFAFA;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    margin: 0 32px;
+    text-align: center;
+    padding: auto;
+    line-height: 64px;
+    float: left;
+}
+
+.menu {
+    min-width: 300px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    float: right;
+}
+
+.menu a {
+    margin: 0 64px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 64px;
+}
+
+.menu a.active {
+    color: #00E7D2;
+    font-weight: 400;
+}
+
+.menu a:hover {
+    color: #00E7D2;
+}
+
+.content {
+    display: flex;
+    background-color: #FAFAFA;
+    padding: 16px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.posts {
+    margin: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    max-width:800px;
+}
+
+.posts-row {
+    min-width: 350px;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
+
+.about {
+    min-width: 350px;
+    display: block;
+    width: 100%;
+}
+
+.navigation {
+    max-width: 400px;
+    width: 100%;
+    min-width: 350px;
+}
+
+.nav-title {
+    font-family: "Roboto Slab", serif;
+    line-height: 20px;
+    text-decoration: none;
+    color: #040404;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+.nav-block {
+    margin: 8px;
+    border-left: 2px solid #040404;
+    padding: 8px;
+}
+
+.nav-info ul {
+    margin: 4px 0 16px 0;
+}
+
+.nav-info a {
+    text-decoration: none;
+    color: #040404;
+    word-wrap: break-word;
+}
+
+.nav-info a:hover {
+    color: #00E7D2;
+}
+
+.nav-info {
+    font-family: "Roboto", sans-serif;
+    height: auto;
+}
+
+.post-card {
+    height: auto;
+    width: auto;
+    padding: 8px;
+    margin: 12px 8px 36px;
+}
+
+.post-title {
+    margin: 4px 0;
+}
+
+.post-title h1 {
+    font-family: "Roboto Slab", serif;
+    line-height: 30px;
+    text-decoration: none;
+    color: #040404;
+    word-wrap: break-word;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.post-short {
+    margin: 12px 0 16px 0;
+    font-family: "Roboto", sans-serif;
+    height: auto;
+}
+
+.post-info {
+    border-top: 2px solid #040404;
+    width: 100%;
+    padding-top: 4px;
+    height: auto;
+}
+
+.post-date {
+    float: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #F9423A;
+}
+
+.post-creator {
+    float: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #040404;
+}

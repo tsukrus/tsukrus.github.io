@@ -1,0 +1,40 @@
+body {
+    background-color: #222;
+    width: 100%;
+    margin: 0;
+}
+
+.content {
+    display:flex;
+    height: 100vh;
+}
+
+.nuotrauka {
+    margin: auto;
+    width: 45%;
+    max-width: 300px;
+}
+
+.nuotrauka img {
+    width: 100%;
+    height: auto;
+}
+
+.back {
+    position: fixed;
+    height: 50px;
+    width: 100px;
+    top: 16px;
+    left: 16px;
+    color: #FAFAFA;
+    text-align: center;
+}
+
+.back a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+}
