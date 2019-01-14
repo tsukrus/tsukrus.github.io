@@ -2,13 +2,19 @@ h1, p, a {
     margin: 0;
 }
 
-body {
+html, body {
     margin: 0;
+    height: 100% !important;
 }
 
 .header, .footer {
     width: auto;
     background-color: #040404;
+}
+
+.footer {
+    height: 64px;
+    bottom: 0;
 }
 
 .items {
@@ -56,11 +62,13 @@ body {
 }
 
 .content {
+    flex:1;
     display: flex;
     background-color: #FAFAFA;
     padding: 16px;
     max-width: 1200px;
     margin: auto;
+    min-height: 100%;
 }
 
 .posts {
