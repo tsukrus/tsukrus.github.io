@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Žaidimukas</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <script>
+            let t=0;
+            
+            function pradeti() {
+                document.getElementById("overlay").style["display"]="none";
+                naujas();
+                
+            }
+            
+            let ats;
+            
+            function naujas() {
+                let random1 = Math.floor(Math.random() * Math.floor(100));
+                let random2 = Math.floor(Math.random() * Math.floor(100));
+                
+                document.getElementById("x").innerHTML=random1 + " + " + random2 + " Teisingi atsakymai: " + t;
+                ats = random1 + random2;
+            }
+            
+            function patikrinti() {
+                if(document.getElementById("y").value == ats) {
+                    t+=1;
+                    naujas();
+                } else {
+                    document.getElementById("overlay").style["display"]="block";
+                    t=0;
+                    document.getElementById("start").value="BANDYTI IŠ NAUJO"
+                }
+                document.getElementById("y").value="";
+            }
+        </script>
+        
+        <div class="main">
+            <div id="overlay">
+                <input type="button" onclick=pradeti() value="PRADĖTI" class="btn start" id="start">
+            </div>
+            <div class="box">
+                <h1 class="uzduotis" id="x">aa</h1>
+                <input type="text" class="atsakymas" id="y"><br />
+                <input type="button" onclick=patikrinti() value="TIKRINTI" class="btn check">
+            </div>
+        </div>
+        
+        <script>
+        document.getElementById("y")
+            .addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                patikrinti();
+            }
+        });
+        </script>
+    </body>
+</html>
